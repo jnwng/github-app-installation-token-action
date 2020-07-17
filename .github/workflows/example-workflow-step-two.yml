@@ -43,6 +43,10 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               check_run_id: "${{ steps.stepTwo.outputs.result }}",
+              output: {
+                title: "This is a demonstration of output updates",
+                summary: "# Markdown is welcome here!"
+              },
               status: "completed",
               conclusion: "success"
             })
